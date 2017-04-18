@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F35CB0C2-5414-4062-AC9E-368A98A18109}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlphaRooms.AutomationFramework</RootNamespace>
+    <AssemblyName>AlphaRooms.AutomationFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseLiveChrome|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ReleaseLiveChrome\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Stagging|AnyCPU'">
+    <OutputPath>bin\Release-Stagging\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseLiveFirefox|AnyCPU' ">
+    <OutputPath>bin\ReleaseLiveFirefox\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=2.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.53.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.53.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alpharooms.cs" />
+    <Compile Include="Enums\AdminPanel.cs" />
+    <Compile Include="Enums\SearchDateRanges.cs" />
+    <Compile Include="Functions\WebControls.cs" />
+    <Compile Include="Log\ActionTypes.cs" />
+    <Compile Include="DataGeneration\FlightResultsPageRnd.cs" />
+    <Compile Include="DataGeneration\HomePageRnd.cs" />
+    <Compile Include="DataGeneration\HotelResultsPageRnd.cs" />
+    <Compile Include="DataGeneration\PaymentPageRnd.cs" />
+    <Compile Include="Enums\Card.cs" />
+    <Compile Include="Enums\Extras.cs" />
+    <Compile Include="Enums\Information.cs" />
+    <Compile Include="Enums\MenuItem.cs" />
+    <Compile Include="Enums\Title.cs" />
+    <Compile Include="Log\ILogger.cs" />
+    <Compile Include="Log\Logger.cs" />
+    <Compile Include="Log\LogAction.cs" />
+    <Compile Include="Log\Parameter.cs" />
+    <Compile Include="PageData\AdminPanelPageData.cs" />
+    <Compile Include="PageData\ChangeSearchPanelData.cs" />
+    <Compile Include="PageData\ChangeSearchPanelRoomData.cs" />
+    <Compile Include="PageData\ConfirmationPageData.cs" />
+    <Compile Include="Pages\AdminPanelPage.cs" />
+    <Compile Include="Pages\ConfirmationPage.cs" />
+    <Compile Include="Panels\ChangeSearchPanel.cs" />
+    <Compile Include="Enums\Languages.cs" />
+    <Compile Include="PageData\DataComparison.cs" />
+    <Compile Include="PageData\ExtrasPageData.cs" />
+    <Compile Include="PageData\ExtrasPageRoomData.cs" />
+    <Compile Include="PageData\HomePageData.cs" />
+    <Compile Include="PageData\FlightResultsPageData.cs" />
+    <Compile Include="Functions\NonFunctionalReq.cs" />
+    <Compile Include="Functions\Calendar.cs" />
+    <Compile Include="Panels\TopPanel.cs" />
+    <Compile Include="Functions\TopResultPagination.cs" />
+    <Compile Include="PageData\HotelDetailPageData.cs" />
+    <Compile Include="PageData\HotelDetailPageRoomData.cs" />
+    <Compile Include="PageData\HotelResultsPageData.cs" />
+    <Compile Include="PageData\HotelResultsPageRoomData.cs" />
+    <Compile Include="PageData\InsurancePageData.cs" />
+    <Compile Include="PageData\PaymentPageData.cs" />
+    <Compile Include="PageData\PaymentPageRoomData.cs" />
+    <Compile Include="Infos\AvailableHotelRoomInfo.cs" />
+    <Compile Include="Infos\AvailableRoomInfo.cs" />
+    <Compile Include="Pages\ExtrasPage.cs" />
+    <Compile Include="PageData\HomePageRoomData.cs" />
+    <Compile Include="Pages\HotelDetailPage.cs" />
+    <Compile Include="Pages\HotelResultsPage.cs" />
+    <Compile Include="Pages\InsurancePage.cs" />
+    <Compile Include="Pages\PaymentPage.cs" />
+    <Compile Include="Pages\FlightResultsPage.cs" />
+    <Compile Include="Processes\ChangeSearch\ChangeSearchStarter.cs" />
+    <Compile Include="Processes\ChangeSearch\ChangeSearchFlightAndHotel.cs" />
+    <Compile Include="Processes\ChangeSearch\ChangeSearchFlightOnly.cs" />
+    <Compile Include="Processes\ChangeSearch\ChangeSearchHotelOnly.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchFlightAndHotel.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchFlightAndHotelChildren.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchFlightAndHotelRoom.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchFlightOnly.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchFlightOnlyChildren.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchHotelOnly.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchHotelOnlyChildren.cs" />
+    <Compile Include="Processes\ChangeSearch\Interfaces\ISearchHotelOnlyRoom.cs" />
+    <Compile Include="Processes\Extras\BookFlightNow.cs" />
+    <Compile Include="Processes\Extras\BookFlightNowStarter.cs" />
+    <Compile Include="Processes\Extras\BookNow.cs" />
+    <Compile Include="Processes\Extras\BookNowStarter.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookFlightNowAirportParking.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookFlightNowAirportParkingEnd.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookFlightNowAirportTransfer.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookFlightNowAirportTransferEnd.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookFlightNowAirportTransferItem.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowAirportParking.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowAirportParkingEnd.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowAirportTransferEnd.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowAirportTransferHotel.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowAirportTransfer.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowAirportTransferItem.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowCarHire.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowCarHireEnd.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowFlightExtras.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowFlightExtrasEnd.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowHoldLuggage.cs" />
+    <Compile Include="Processes\Extras\Interfaces\IBookNowHoldLuggageEnd.cs" />
+    <Compile Include="Processes\FlightResults\Interfaces\ISelectFlight.cs" />
+    <Compile Include="Processes\FlightResults\SelectFlight.cs" />
+    <Compile Include="Processes\FlightResults\Interfaces\ISelectFlightByFirstSupplier.cs" />
+    <Compile Include="Processes\FlightResults\SelectFlightStarter.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchFlightAndHotelChildren.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchFlightOnlyChildren.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchHotelOnlyChildren.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchHotelOnlyRoom.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchFlightAndHotel.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchFlightOnly.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchHotelOnly.cs" />
+    <Compile Include="Processes\Home\SearchStarter.cs" />
+    <Compile Include="Processes\HotelDetail\Interfaces\ISelectHotelDetails.cs" />
+    <Compile Include="Processes\HotelDetail\Interfaces\ISelectHotelDetailsRoom.cs" />
+    <Compile Include="Processes\HotelDetail\SelectHotelDetails.cs" />
+    <Compile Include="Processes\HotelDetail\Interfaces\ISelectHotelDetailsByFirstSupplier.cs" />
+    <Compile Include="Processes\HotelDetail\SelectHotelDetailsRoomStarter.cs" />
+    <Compile Include="Processes\HotelDetail\Interfaces\ISelectHotelDetailsSingleRoom.cs" />
+    <Compile Include="Processes\HotelResults\Interfaces\ISelectRoomByFirstSupplier.cs" />
+    <Compile Include="Processes\HotelResults\Interfaces\ISelectRoomByHotel.cs" />
+    <Compile Include="Processes\HotelResults\Interfaces\ISelectRoomByHotelRoom.cs" />
+    <Compile Include="Processes\HotelResults\SelectRoomByHotel.cs" />
+    <Compile Include="Processes\HotelResults\Interfaces\ISelectRoomByHotelFirst.cs" />
+    <Compile Include="Processes\HotelResults\Interfaces\ISelectRoomByHotelSingleRoom.cs" />
+    <Compile Include="Processes\Home\SearchFlightAndHotel.cs" />
+    <Compile Include="Processes\Home\Interfaces\ISearchFlightAndHotelRoom.cs" />
+    <Compile Include="Processes\Home\SearchFlightOnly.cs" />
+    <Compile Include="Processes\Home\SearchHotelOnly.cs" />
+    <Compile Include="Processes\HotelResults\SelectRoomStarter.cs" />
+    <Compile Include="Processes\Insurance\Interfaces\IUpdatePrices.cs" />
+    <Compile Include="Processes\Insurance\UpdatePricesStarter.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightAndHotelBookingAllGuests.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightAndHotelBookingGuestDetails.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightAndHotelBookingGuestDetailsAuto.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightAndHotelBookingGuestRoom.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAHotelBookingAllGuests.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAHotelBookingGuestDetails.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAHotelBookingGuestDetailsAuto.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAHotelBookingGuestRoom.cs" />
+    <Compile Include="Processes\Payment\MakeAHotelBooking.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeABookingStaffDetailsAuto.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeABookingPaymentDetailsAuto.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightBookingGuestDetailsAuto.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeABookingContactDetailsAuto.cs" />
+    <Compile Include="Processes\Payment\MakeAFlightAndHotelBooking.cs" />
+    <Compile Include="Processes\Payment\MakeAFlightAndHotelBookingStarter.cs" />
+    <Compile Include="Processes\Payment\MakeAFlightBooking.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightBookingAllGuests.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeABookingContactDetails.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeAFlightBookingGuestDetails.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeABookingPaymentDetails.cs" />
+    <Compile Include="Processes\Payment\Interfaces\IMakeABookingStaffDetails.cs" />
+    <Compile Include="Processes\Payment\MakeAFlightBookingStarter.cs" />
+    <Compile Include="Processes\Payment\MakeAHotelBookingStarter.cs" />
+    <Compile Include="Selenium\Driver.cs" />
+    <Compile Include="Enums\TestEnvironment.cs" />
+    <Compile Include="Enums\Select.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selenium\DriverExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

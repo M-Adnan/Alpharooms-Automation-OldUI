@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaRooms.AutomationFramework", "AlphaRoomsAutomationFrameWork\AlphaRooms.AutomationFramework.csproj", "{F35CB0C2-5414-4062-AC9E-368A98A18109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaRooms.AutomationFramework.Tests", "AlphaRoomsTests\AlphaRooms.AutomationFramework.Tests.csproj", "{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaRooms.AutomationFramework.Repositories", "AlphaRoomsTests.Repositories\AlphaRooms.AutomationFramework.Repositories.csproj", "{332234D0-AB52-4EAF-B3E7-920CDFA72844}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseLiveChrome|Any CPU = ReleaseLiveChrome|Any CPU
+		ReleaseLiveFirefox|Any CPU = ReleaseLiveFirefox|Any CPU
+		Release-Stagging|Any CPU = Release-Stagging|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.Release|Any CPU.ActiveCfg = Release-Stagging|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.Release|Any CPU.Build.0 = Release-Stagging|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.ReleaseLiveChrome|Any CPU.ActiveCfg = ReleaseLiveChrome|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.ReleaseLiveChrome|Any CPU.Build.0 = ReleaseLiveChrome|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.ReleaseLiveFirefox|Any CPU.ActiveCfg = ReleaseLiveFirefox|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.ReleaseLiveFirefox|Any CPU.Build.0 = ReleaseLiveFirefox|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.Release-Stagging|Any CPU.ActiveCfg = Release-Stagging|Any CPU
+		{F35CB0C2-5414-4062-AC9E-368A98A18109}.Release-Stagging|Any CPU.Build.0 = Release-Stagging|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.Release|Any CPU.ActiveCfg = Release-Stagging|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.Release|Any CPU.Build.0 = Release-Stagging|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.ReleaseLiveChrome|Any CPU.ActiveCfg = ReleaseLiveChrome|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.ReleaseLiveChrome|Any CPU.Build.0 = ReleaseLiveChrome|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.ReleaseLiveFirefox|Any CPU.ActiveCfg = ReleaseLiveFirefox|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.ReleaseLiveFirefox|Any CPU.Build.0 = ReleaseLiveFirefox|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.Release-Stagging|Any CPU.ActiveCfg = Release-Stagging|Any CPU
+		{3CAA8BC9-6993-433D-AB59-8E60BA2227D4}.Release-Stagging|Any CPU.Build.0 = Release-Stagging|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.Release|Any CPU.ActiveCfg = Release-Stagging|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.Release|Any CPU.Build.0 = Release-Stagging|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.ReleaseLiveChrome|Any CPU.ActiveCfg = ReleaseLiveChrome|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.ReleaseLiveChrome|Any CPU.Build.0 = ReleaseLiveChrome|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.ReleaseLiveFirefox|Any CPU.ActiveCfg = ReleaseLiveFirefox|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.ReleaseLiveFirefox|Any CPU.Build.0 = ReleaseLiveFirefox|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.Release-Stagging|Any CPU.ActiveCfg = Release-Stagging|Any CPU
+		{332234D0-AB52-4EAF-B3E7-920CDFA72844}.Release-Stagging|Any CPU.Build.0 = Release-Stagging|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;Common.6.0.1304.0\lib\NET45;Logging.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

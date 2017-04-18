@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AlphaRooms.AutomationFramework.Tests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestingEnvironment" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Live</Value>
+    </Setting>
+    <Setting Name="SeleniumRemoteServerURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:4444/wd/hub</Value>
+    </Setting>
+    <Setting Name="SeleniumExecuteLocally" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SeleniumBrowser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">chrome</Value>
+    </Setting>
+    <Setting Name="AutomationFrameworkConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=ec2-54-229-207-216.eu-west-1.compute.amazonaws.com;Initial Catalog=SystemsManagement;Persist Security Info=True;User ID=sa;Password=R0X13S;MultipleActiveResultSets=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
